@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bygg din nya hemsida med oss.">
+    <meta name="keywords" content="lektion, ec, html, css">
+    <meta name="author" content="EC-utbildning">
+    <title>Lektion 2 - genomgång av element</title>
+    <style>
+        .border{
+           border: 1px solid black;
+        }
+        .customClass{
+            background: black;
+        }
+        /* Media query - tablets 768 and up */
+        @media(min-width: 768px){
+            .customClass{
+                background: white;
+            }
+        }
+        /* Media query - large devices 992px and up */
+        @media(min-width: 992px){
+            .customClass{
+                background:red;
+            }
+        }
+        /* Media query - Extra large devices 1200px and up */
+        @media(min-width: 1200px){
+            .customClass{
+                background: yellow;
+            }
+        }
+
+         /* Media query - Extra EXTRA large devices 1600px and up */
+         @media(min-width: 1600px){
+            .customClass{
+                background: rgb(119, 0, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- BLOCK ELEMENT -->
+    <section class="border customClass">Section</section>
+    <header class="border">Header</header>
+    <footer class="border">Footer</footer>
+    <main class="border">Main</main>
+    <nav class="border">Nav</nav>
+    <aside class="border">Aside</aside>
+    <div class="border">Div</div>
+    <p class="border">Paragraf</p>
+
+    <h1 class="border">H1</h1>
+    <h2 class="border">H2</h2>
+    <h3 class="border">H3</h3>
+    <h4 class="border">H4</h4>
+    <h5 class="border">H5</h5>
+    <h6 class="border">H6</h6>
+
+    <hr>
+    <br>
+    <!-- INLINE ELEMENT -->
+    <i class="border">italic</i>
+    <em class="border">emphasize (använd ist för i)</em>
+    <b class="border">Bold</b>
+    <strong class="border">Strong (Använd ist för Bold)</strong>
+    <u class="border">Underline</u>
+    <span class="border">Span</span>
+    <small class="border">Small</small>
+    <del class="border">Del - genomstruken</del>
+    <s class="border">S - genomstruken</s>
+
+    <a class="border" href="about.html" target="_blank">a en länk</a>
+
+    <!-- LISTOR -->
+    <ul class="border">
+        <li>unordered list item</li>
+        <li class="border">unordered list item</li>
+        <li>unordered list item</li>
+    </ul>
+    <ol class="border">
+        <li>ordered list item</li>
+        <li>ordered list item</li>
+        <li>ordered list item</li>
+    </ol>
+
+    <!-- TABLE -->
+    <table class="border">
+        <thead>
+            <tr>
+                <th>Theader 1</th>
+                <th>Theader 2</th>
+                <th>Theader 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tdata</td>
+                <td>Tdata</td>
+                <td>Tdata</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- IMAGE -->
+    <br>
+    <img src="Enbildsomintefinnas.png" alt="Beskrivande text om bilden inte finns" class="border">
+    <br>
+    <img src="./img/jack-dong-yJozLVBxNA0-unsplash.jpg" alt="">
+
+ 
+
+</body>
+</html>
